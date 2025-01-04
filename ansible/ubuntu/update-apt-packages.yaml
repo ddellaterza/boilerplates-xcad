@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: update apt packages
+      become: true
       apt:
-        become: true
         upgrade: yes
         update_cache: yes
